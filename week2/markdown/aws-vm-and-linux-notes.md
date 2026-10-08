@@ -68,7 +68,7 @@ cat /etc/shells
 - `cd ~` goes to the home directory (the `~` symbol is called a **tilde**, pronounced *TIL-duh* or *TIL-day*)
 - `rm -r` removes files recursively
 
-## Linux Commands
+# Linux Commands (Part - 1)
 ![alt text](../../images/cmd.png)
 
 | Term | Path | What it is |
@@ -76,3 +76,29 @@ cat /etc/shells
 | Root directory | `/` | Top of the whole filesystem |
 | Home directory | `/home/yourname` (or `~`) (or cd)| Your personal space |
 | Root user's home | `/root` | Home folder of the superuser |
+
+
+---
+
+# Linux Commands (Part - 2)
+- **sudo apt-get update** (update)
+- **sudo apt upgrade -y** (upgrade and say "yes" to every ques)
+- **sudo apt-get install tree** (install the tree command, which shows files and folders directory)
+- **head/tail -2 chickenjoke.txt** (check first or last two lines)
+- **nl chickenjoke.txt** (number the lines)
+- **cat chickenjoke.txt | grep chicken** (to find the specific)
+- **sudo su** (superuser switches to root)
+
+sudo  = super user <br>
+grep = to seatch the line with specific word <br>
+control + C to cancel the command <br>
+su = switch
+
+### Important Notes
+- **mv** can either rename or move to other folder <br>
+ (for example: mv chickenjoke.txt badjoke.txt = rename <br>
+ mv chickenjoke.txt ~ = move to home folder)
+
+
+
+
