@@ -7,4 +7,5 @@ Learning by week:
 ## Changes log
 
 * Add changes log
+* Change test
 
