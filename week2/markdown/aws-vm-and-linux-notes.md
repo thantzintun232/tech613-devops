@@ -6,10 +6,6 @@
 
 **Security Group = Firewall**
 
-| Situation | IP type | Example |
-| --- | --- | --- |
-| When home | Private IP | `172.31.52.106` |
-| When outside | Public IP | `3.248.205.70` |
 
 ---
 
@@ -25,17 +21,13 @@ cd .ssh
 
 **Step 3:** Copy and paste the public DNS from *SSH Client* through *Instance Connect*
 
-![image.png](image.png)
-
+![alt text](../../images/DNS.png)
 **Step 4:** Type `yes` and the VM is ready to go
 
 > **Important Note:** Every time we stop and start the instance again, the public IP will change.
 
 ---
 
-## Linux Commands
-
-![image.png](image.png)
 
 ### Why Learn Linux?
 
@@ -76,10 +68,11 @@ cat /etc/shells
 - `cd ~` goes to the home directory (the `~` symbol is called a **tilde**, pronounced *TIL-duh* or *TIL-day*)
 - `rm -r` removes files recursively
 
-![Screenshot 2026-10-07 at 15.45.29.png](Screenshot%202026-10-07%20at%2015.45.29.png)
+## Linux Commands
+![alt text](../../images/cmd.png)
 
 | Term | Path | What it is |
 | --- | --- | --- |
 | Root directory | `/` | Top of the whole filesystem |
-| Home directory | `/home/yourname` (or `~`) | Your personal space |
+| Home directory | `/home/yourname` (or `~`) (or cd)| Your personal space |
 | Root user's home | `/root` | Home folder of the superuser |
