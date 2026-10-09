@@ -151,4 +151,4 @@ What is a processor?
 | **Child process** | The process created by the parent |
 | **Zombie process** | A child that has finished, but whose parent hasn’t collected its exit status yet |
 
-![alt text](image.png)
+![alt text](../../images/image.png)
