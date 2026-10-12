@@ -115,27 +115,3 @@ chmod u=rw,g=r,o= testfile.txt
 | `-` | Remove permission |
 | `=` | Set the specified permissions exactly |
 
-## Practice on your cloud VM
-
-Run each command in order and check the permissions after each change:
-
-```bash
-touch testfile.txt
-chmod u=r,g=rwx,o=rw testfile.txt
-ls -l testfile.txt
-# Expected: -r--rwxrw- (476)
-
-chmod a+x testfile.txt
-ls -l testfile.txt
-# Expected: -r-xrwxrwx (577)
-
-chmod g-w testfile.txt
-ls -l testfile.txt
-# Expected: -r-xr-xrwx (557)
-
-chmod 640 testfile.txt
-ls -l testfile.txt
-# Expected: -rw-r----- (640)
-```
-
-These are commands for you to run on your VM; they have not been run on your cloud instance.

@@ -49,34 +49,3 @@
 | `>>` | Append standard output to a file | Kept; new output added at the end |
 
 Both operators redirect **standard output**, not error messages, by default.
-
-## Practice
-
-Run these commands using a practice filename that you do not need to keep:
-
-```bash
-echo "First line" > redirection_practice.txt
-echo "Second line" >> redirection_practice.txt
-cat redirection_practice.txt
-```
-
-Expected contents:
-
-```text
-First line
-Second line
-```
-
-Then replace the contents:
-
-```bash
-echo "Replacement line" > redirection_practice.txt
-cat redirection_practice.txt
-```
-
-Expected contents:
-
-```text
-Replacement line
-```
-

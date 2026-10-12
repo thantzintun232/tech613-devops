@@ -79,52 +79,6 @@
 
    `chown` changes ownership; `chmod` changes permissions.
 
-## Test on your cloud VM
 
-These commands create a temporary practice directory and new items without modifying your existing files:
 
-```bash
-cd ~
-practice_dir=$(mktemp -d ownership-practice.XXXXXX)
-cd "$practice_dir"
-whoami
-id
-umask
-touch new.txt
-mkdir myfolder
-ls -l new.txt
-ls -ld myfolder
-```
-
-Compare the owner and group with `id`, and the permissions with your umask. With `022`, you would normally see `644` for the file and `755` for the directory.
-
-Test adding owner execute permission:
-
-```bash
-chmod u+x new.txt
-ls -l new.txt
-```
-
-If the file started at `644`, it should now be `744` (`rwxr--r--`). Adding execute permission does not turn a text file into a valid program.
-
-Remove the execute permission again:
-
-```bash
-chmod u-x new.txt
-ls -l new.txt
-```
-
-Test changing ownership of the practice file, then restore it:
-
-```bash
-original_owner=$(id -un)
-sudo chown root new.txt
-ls -l new.txt
-sudo chown "$original_owner" new.txt
-ls -l new.txt
-```
-
-The owner should change to `root`, then back to your username. The owning group stays unchanged because no group was specified.
-
-**Testing status:** These are commands for you to run on your cloud VM; they have not been executed on your VM here.
 
