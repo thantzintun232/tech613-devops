@@ -9,4 +9,3 @@
 - git push
 
 
-![alt text](image.png)
